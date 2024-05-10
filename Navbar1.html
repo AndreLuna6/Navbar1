@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <title>Festividad 4.0</title>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <button onclick="toggleMenu()" class="burger">
+      <ion-icon name="list-outline"></ion-icon>
+    </button>
+    <button class="button">Navbar 1</button>
+    <div class="dropdowns">
+      <div class="dropdown">
+        <button class="button">Menu 1
+          <ion-icon name="person-outline"></ion-icon>
+        </button>
+        <div class="dropdown-menu">
+
+          <button src="login.html">Agregar</button>
+          <button>Buscar</button>
+
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="button">
+          Menu 2
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </button>
+        <div class="dropdown-menu">
+          <button>Buscar</button>
+          <button>Agregar</button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="button">
+          Menu 3
+          <ion-icon name="log-in-outline"></ion-icon>
+        </button>
+        <div class="dropdown-menu">
+          <button>Live Chat</button>
+          <button>Send Email</button>
+          <button>Request Help</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    const toggleMenu = () => document.body.classList.toggle("open");
+  </script>
+</body>
+
+</html>
